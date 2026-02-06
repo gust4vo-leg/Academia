@@ -1,0 +1,61 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+.topo {
+    display: flex;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: black;
+    color: white;
+}
+
+.tema {
+    text-align: center;
+}
+
+.topo-direita {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+}
+
+.login {
+    padding: 12px 26px;
+    background-color: #D3AF37;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.login:hover {
+    background-color: #D3AF37;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.sobre h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.somos h3 {
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
