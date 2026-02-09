@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(./Imagens/planodefundo.jpg);
+    font-family: "Cabin", sans-serif;
+    font-weight: 400;
+}
+
+body a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.topo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    padding-bottom: -10px;
+}
+
+.logo {
+    margin-left: 50px;
+    width: 120px;
+}
+
+.menu {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    text-decoration: none;
+    margin-right: 150px;
+}
+
+.menu a:hover {
+    color: #D4AF37;
+}
+
+.opcao {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    align-items: center;
+}
+
+.a {
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.suspensa {
+    position: relative;
+    text-decoration: none;
+}
+
+.submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: black;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 180px;
+    border-radius: 8px;
+    overflow: hidden;
+    display: none;
+}
+
+.suspensa:hover .submenu {
+    display: block;
+}
+
+.submenu li a {
+    display: block;
+    padding: 12px;
+    color: white;
+}
+
+.submenu li a:hover {
+    background: #D4AF37;
+    color: black;
+}
+
+.destaque {
+    color: #d4af37;
+    font-weight: bold;
+}
+
+main {
+    padding: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.card {
+    display: inline-block;
+    padding: 2rem;
+    border: 3px solid #D4AF37;
+    border-radius: 8px;
+    color: aliceblue;
+    background-color: black;
+}
+
+.card h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.campo,
+.nascimento {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.campo label,
+.nascimento label {
+    width: 180px;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    flex-shrink: 0;
+}
+
+
+.campo input,
+.nascimento input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+label p {
+    margin-left: 4px;
+    color: #D4AF37;
+}
+
+.botao {
+    border: 1px solid #D4AF37;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #D4AF37;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
+    width: 100%;
+    height: 50%;
+    max-width: 600px;
+    margin-top: 10px;
+    margin-right: 20px;
+    text-align: center;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    display: inline-block;
+}
+
+input[type="checkbox"] {
+    display: inline;
+    margin-top: 10px;
+}
+
+.barra {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: transparent;
+    margin-top: 100px;
+}
+
+.voltar {
+    position: absolute;
+    left: 15px;
+    background-color: #D4AF37;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
+    color: white;
+    padding: 6px 14px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.paragrafo-footer {
+    font-size: 18px;
+    color: aliceblue;
+    font-weight: bold;
+}

@@ -3,48 +3,108 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>e-commerce</title>
+    <title>Iron Force</title>
     <link rel="stylesheet" href="sobre.css">
 </head>
 
 <body>
     <header class="topo">
-        <div class="tema">
-            <h1>Iron</h1>
-            <h1>Force</h1>
-        </div>
         <div>
-            <a><img src="./imagens/academia.jpg" class="logo" alt="academia" width="60px"></a>
+            <a href="cadastro"><img src="./imagens/academia.png" class="logo" alt="academia"></a>
         </div>
+        <nav class="menu">
+            <ul class="opcao">
+                <li><a href="#">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+
+                <li class="suspensa">
+                    <a>Planos ▾</a>
+
+                    <ul class="submenu">
+                        <li><a href="#">Mensal</a></li>
+                        <li><a href="#">Anual</a></li>
+                    </ul>
+                </li>
+
+                <li class="suspensa">
+                    <a>Treinos ▾</a>
+
+                    <ul class="submenu">
+                        <li><a href="#">Musculação</a></li>
+                        <li><a href="#">Cárdio</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#">Contato</a></li>
+                <li><a href="matricule.html" class="destaque">Matricule-se</a></li>
+            </ul>
+        </nav>
+
         <div class="topo-direita">
-            <a href="entrar.html" class="login">login</a>
+            <a href="login.html" class="login">login</a>
         </div>
     </header>
+    <section class="hero">
+        <div class="hero-texto">
+            <h1>TRANSFORME SEU CORPO</h1>
+            <p>Treine na melhor academia da cidade</p>
+            <a href="matricule.html" class="btn">Matricule-se</a>
+        </div>
+        <div class="borda-img"></div>
+    </section>
     <main>
         <section class="sobre">
             <div class="container">
+
                 <h3>Sobre a academia</h3>
-                <div class="texto-inicial">
-                    <p>
-                        A Iron Force é uma academia criada com o propósito de promover saúde, bem-estar e transformação
-                        física
-                        por
-                        meio da prática de atividades físicas e hábitos saudáveis. Nosso espaço foi desenvolvido para
-                        oferecer
-                        um
-                        ambiente moderno, motivador e acolhedor, ideal para pessoas que desejam evoluir e alcançar seus
-                        objetivos.
-                    </p>
-                    <p>
-                        Acreditamos que a atividade física é essencial para uma vida equilibrada e saudável. Por isso,
-                        buscamos
-                        proporcionar uma experiência completa, unindo equipamentos de qualidade, orientação profissional
-                        e
-                        um
-                        ambiente que incentive a disciplina e a superação diária.
-                    </p>
+
+                <div class="texto-flex">
+                    <div class="texto-inicial">
+                        <p>
+                            A Iron Force é uma academia criada com o propósito de promover saúde, bem-estar e
+                            transformação física por
+                            meio da prática de atividades físicas e hábitos saudáveis. Nosso espaço foi desenvolvido
+                            para oferecer um
+                            ambiente moderno, motivador e acolhedor, ideal para pessoas que desejam evoluir e alcançar
+                            seus objetivos.
+                        </p>
+                        <p>
+                            Acreditamos que a atividade física é essencial para uma vida equilibrada e saudável. Por
+                            isso, buscamos proporcionar uma experiência completa, unindo equipamentos de qualidade,
+                            orientação profissional e um ambiente que incentive a disciplina e a superação diária.
+                        </p>
+                    </div>
+
+                    <img src="./Imagens/fotodedentro.jpg" class="foto-academia">
+
                 </div>
+
+                <div class="numeros">
+                    <div>
+                        <h2>+500</h2>
+                        <p>Alunos</p>
+                    </div>
+
+                    <div>
+                        <h2>+5</h2>
+                        <p>Anos</p>
+                    </div>
+
+                    <div>
+                        <h2>+20</h2>
+                        <p>Equipamentos</p>
+                    </div>
+
+                    <div>
+                        <h2>4.9⭐</h2>
+                        <p>Avaliação</p>
+                    </div>
+                </div>
+
+                <div class="botao-matri">
+                    <a href="matricule.html" class="matriucule">Matricule-se agora</a>
+                </div>
+
             </div>
         </section>
         <section class="somos">
@@ -105,6 +165,12 @@
             </div>
         </section>
     </main>
+    <footer>
+        <div class="barra">
+            <span class="paragrafo-footer">© 2026 - Projeto de estudo - academia</span>
+        </div>
+
+    </footer>
 </body>
 
 </html>

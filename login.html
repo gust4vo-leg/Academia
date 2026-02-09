@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sessão de login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <header class="topo">
+        <div>
+            <a href="sobre.html"><img src="./imagens/academia.png" class="logo" alt="academia"></a>
+        </div>
+        <nav class="menu">
+            <ul class="opcao">
+                <li><a href="#">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+
+                <li class="suspensa">
+                    <a>Planos ▾</a>
+
+                    <ul class="submenu">
+                        <li><a href="#">Mensal</a></li>
+                        <li><a href="#">Anual</a></li>
+                    </ul>
+                </li>
+
+                <li class="suspensa">
+                    <a>Treinos ▾</a>
+
+                    <ul class="submenu">
+                        <li><a href="#">Musculação</a></li>
+                        <li><a href="#">Cárdio</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#">Contato</a></li>
+                <li><a href="matricule.html" class="destaque">Matricule-se</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <section class="card">
+            <h2>Preeencha o Formulário</h2>
+
+            <div class="campo">
+                <label>Nome<p>*</p></label>
+                <input type="text" placeholder="Nome completo">
+            </div>
+
+            <div class="nascimento">
+                <label>Data de Nascimento<p>*</p> </label>
+                <input type="texto" placeholder="Data de Nascimento" onfocus="(this.type='date')" onblur="if(this.value==''){this.type='text'}">
+            </div>
+
+            <div class="campo">
+                <label>Email<p>*</p></label>
+                <input type="email" placeholder="Email">
+            </div>
+            <div class="campo">
+                <label>Telefone<p>*</p></label>
+                <input type="number" placeholder="Telefone">
+
+            </div>
+            <div class="campo">
+                <label>Senha<p>*</p></label>
+                <input type="password" placeholder="Senha">
+            </div>
+            <div class="campo">
+                <label>Confirmar Senha<p>*</p></label>
+                <input type="password" placeholder="Confirmar senha">
+            </div>
+
+            <a href="sobre.html" class="botao">Cadastrar</a>
+
+            <label>
+                <input type="checkbox"> Aceito os termos de uso
+            </label>
+        </section>
+    </main>
+
+    <footer>
+        <div class="barra">
+            <a href="sobre.html" class="voltar">Voltar</a>
+            <span class="paragrafo-footer">© 2026 - Projeto de estudo- Academia</span>
+        </div>
+
+    </footer>
+</body>
+
+</html>

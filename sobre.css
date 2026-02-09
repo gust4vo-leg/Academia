@@ -1,24 +1,110 @@
-* {
+ * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
 body {
+    background-image: url("./Imagens/planodefundo.jpg");
+    background-size: cover;
+    /*Cobre a tela toda*/
+    background-position: center;
+    /*centraliza*/
+    background-repeat: no-repeat;
+    /*Não Repete*/
+    background-attachment: fixed;
+    /*fundo parado*/
     font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.6;
 }
 
 .topo {
     display: flex;
     align-items: center;
-    padding: 20px 40px;
+    justify-content: space-between;
+    padding: 0 40px;
     background-color: black;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+}
+
+.topo div:first-child {
+    justify-self: start;
+}
+
+.logo {
+    height: 110px;
+}
+
+.menu {
+    justify-content: center;
+    flex: 1;
+    display: flex;
+}
+
+.topo div:first-child {
+    flex: 1;
+}
+
+.suspensa {
+    position: relative;
+}
+
+.submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: black;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 180px;
+    border-radius: 8px;
+    overflow: hidden;
+    display: none;
+    z-index: 999;
+}
+
+.suspensa:hover .submenu {
+    display: block;
+}
+
+.submenu li a {
+    display: block;
+    padding: 12px;
     color: white;
 }
 
-.tema {
-    text-align: center;
+.submenu li a:hover {
+    background: #D4AF37;
+    color: black;
+}
+
+.opcao {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    align-items: center;
+}
+
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.destaque {
+    color: #d4af37;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    color: #D4AF37;
 }
 
 .topo-direita {
@@ -28,19 +114,75 @@ body {
 }
 
 .login {
-    padding: 12px 26px;
-    background-color: #D3AF37;
-    color: white;
+    padding: 8px 15px;
     text-decoration: none;
-    border-radius: 20px;
-    font-size: 15px;
+    display: inline-block;
+    background: linear-gradient(45deg, #D4AF37);
+    color: black;
+    border-radius: 25px;
     font-weight: bold;
-    transition: 0.3s;
-    cursor: pointer;
+    font-size: 22px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
+    position: relative;
+    overflow: hidden;
 }
 
 .login:hover {
-    background-color: #D3AF37;
+    background-color: #D4AF37;
+}
+
+.hero {
+    height: calc(100vh - 100px);
+    margin-top: 100px;
+    background: url(./Imagens/treino.jpg) center/cover no-repeat;
+    position: relative;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+}
+
+.hero-texto {
+    min-height: calc(100vh - 100px);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5)), rgba(0, 0, 0, 0.75);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-texto h1 {
+    font-size: 56px;
+    color: #D4AF37;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.hero-texto p {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background: gold;
+    color: black;
+    padding: 14px 30px;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 22px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
+    position: relative;
+    overflow: hidden;;
+}
+
+.btn-principal:hover {
+    background: #D4AF37;
+}
+
+.borda-img {
+    border-bottom: 1px solid rgba(212, 175, 55, 0.3);
 }
 
 .container {
@@ -50,12 +192,132 @@ body {
 }
 
 .sobre h3 {
-    font-size: 24px;
+    display: inline-block;
+    background: linear-gradient(45deg, #D4AF37);
+    color: black;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 22px;
+    margin-top: 5rem;
     margin-bottom: 10px;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
+    position: relative;
+    overflow: hidden;
+    padding: 0.5rem;
 }
 
+.texto-flex {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.sobre p {
+    color: #eee;
+    font-size: 20px;
+    line-height: 1.7;
+    font-weight: 600;
+}
+
+
+.foto-academia {
+    margin-top: 20px;
+    width: 420px;
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(255, 215, 0, 0.3);
+}
+
+.numeros {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    margin-top: 60px;
+    text-align: center;
+    border: 1px solid #D4AF37;
+    background-color: black;
+    padding: 0.5rem;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
+}
+
+.numeros h2 {
+    color: gold;
+    font-size: 40px;
+}
+
+.botao-matri {
+    margin-left: 430px;
+    text-align: center;
+    margin-top: 50px;
+    border: 1px solid #D4AF37;
+    border-radius: 15px;
+    width: 25%;
+    padding: 0.5rem;
+    background-color: #D4AF37;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
+}
+
+.botao-matri a {
+    color: black;
+    font-size: 400;
+    font-weight: bold;
+}
 .somos h3 {
-    font-size: 24px;
-    margin-top: 0;
+    display: inline-block;
+    background: linear-gradient(45deg, #D4AF37);
+    color: black;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 22px;
     margin-bottom: 10px;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
+    position: relative;
+    overflow: hidden;
+    padding: 0.5rem;
+}
+
+.somos p {
+    color: #eee;
+    font-size: 20px;
+    line-height: 1.7;
+    font-weight: 600;
+}
+
+.fazemos h3 {
+    display: inline-block;
+    background: linear-gradient(45deg, #D4AF37);
+    color: black;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 22px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
+    position: relative;
+    overflow: hidden;
+    padding: 0.5rem;
+}
+
+.fazemos p {
+    color: #eee;
+    font-size: 20px;
+    line-height: 1.7;
+    font-weight: 600;
+}
+
+.barra {
+    background-color: transparent;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 2rem;
+}
+
+.paragrafo-footer {
+    font-size: 14px;
+    text-align: center;
+    font-weight: bold;
+    justify-content: center;
+    display: flex;
+    flex: 1;
 }

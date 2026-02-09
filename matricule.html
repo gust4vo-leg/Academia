@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Matricule-se</title>
+    <link rel="stylesheet" href="matricule.css">
+</head>
+
+<body>
+    <header class="topo">
+        <div>
+            <a href="sobre.html"><img src="./imagens/academia.png" class="logo" alt="academia"></a>
+        </div>
+        <nav class="menu">
+            <ul class="opcao">
+                <li><a href="#">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+
+                <li class="suspensa">
+                    <a>Planos ▾</a>
+
+                    <ul class="submenu">
+                        <li><a href="#">Mensal</a></li>
+                        <li><a href="#">Anual</a></li>
+                    </ul>
+                </li>
+
+                <li class="suspensa">
+                    <a>Treinos ▾</a>
+
+                    <ul class="submenu">
+                        <li><a href="#">Musculação</a></li>
+                        <li><a href="#">Cárdio</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="card">
+            <div class="texto-central">
+                <h3>MATRICULE-SE NA IRON FORCE</h3>
+            </div>
+            <section class="campo">
+                <label>Nome <p>*</p></label>
+                <input type="text" placeholder="Nome completo">
+            </section>
+
+            <section class="campo">
+                <label>Email <p>*</p></label>
+                <input type="email" placeholder="Email">
+            </section>
+
+            <section class="campo">
+                <label>Telefone <p>*</p></label>
+                <input type="number" placeholder="Telefone">
+            </section>
+
+            <section class="campo">
+                <label>CPF <p>*</p></label>
+                <input type="number" placeholder="CPF">
+            </section>
+
+            <section class="plano">
+                <h4>Escolha seu plano:</h3>
+
+                    <label>
+                        <input type="radio" name="plano" value="basico">
+                        Básico
+                    </label>
+
+                    <label>
+                        <input type="radio" name="plano" value="premium">
+                        Premium
+                    </label>
+
+                    <label>
+                        <input type="radio" name="plano" value="black">
+                        Black
+                    </label>
+            </section>
+
+            <section class="periodos">
+                <h4>Período:</h4>
+
+                <label>
+                    <input type="radio" name="periodo" value="mensal">
+                    Mensal
+                </label>
+
+                <label>
+                    <input type="radio" name="periodo" value="anual">
+                    Anual
+                </label>
+            </section>
+
+            <section class="objetivo">
+                <h4>Objetivo:</h4>
+                <div class="grupo-botao">
+                    <button class="botao">Ganhar Massa</button>
+                    <button class="botao">Emagrecer</button>
+                    <button class="botao">Condicionamento</button>
+                </div>
+            </section>
+
+            <section class="finalizar">
+                <a href="confir_matri.html"><button class="final">FINALIZAR MATRÍCULA</button></a>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <div class="barra">
+            <a href="sobre.html" class="voltar">Voltar</a>
+            <span class="paragrafo-footer">© 2026 - Projeto de estudo- Academia</span>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
