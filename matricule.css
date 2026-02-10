@@ -181,6 +181,7 @@ input[type="radio"] {
     text-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
     font-size: 18px;
     margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 .geupo-botao {

@@ -1,0 +1,355 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("./Imagens/planodefundo.jpg");
+    background-size: cover;
+    /*Cobre a tela toda*/
+    background-position: center;
+    /*centraliza*/
+    background-repeat: no-repeat;
+    /*Não Repete*/
+    background-attachment: fixed;
+    /*fundo parado*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.topo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    background-color: black;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+}
+
+.topo div:first-child {
+    justify-self: start;
+}
+
+.logo {
+    height: 110px;
+}
+
+.menu {
+    justify-content: center;
+    flex: 1;
+    display: flex;
+}
+
+.topo div:first-child {
+    flex: 1;
+}
+
+.suspensa {
+    position: relative;
+}
+
+.submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: black;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 180px;
+    border-radius: 8px;
+    overflow: hidden;
+    display: none;
+    z-index: 999;
+}
+
+.suspensa:hover .submenu {
+    display: block;
+}
+
+.submenu li a {
+    display: block;
+    padding: 12px;
+    color: white;
+}
+
+.submenu li a:hover {
+    background: #D4AF37;
+    color: black;
+}
+
+.opcao {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    align-items: center;
+}
+
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.destaque {
+    color: #d4af37;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    color: #D4AF37;
+}
+
+.topo-direita {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+}
+
+.login {
+    padding: 8px 15px;
+    text-decoration: none;
+    display: inline-block;
+    background: linear-gradient(45deg, #D4AF37);
+    color: black;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 22px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
+    position: relative;
+    overflow: hidden;
+}
+
+.login:hover {
+    background-color: #D4AF37;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 40px;
+}
+
+main {
+    padding: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.texto-inicial {
+    margin-top: 15px;
+    color: #D4AF37;
+    text-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
+    text-align: center;
+    font-size: 28px;
+}
+
+.card {
+    display: flex;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.comum {
+    margin: 15px;
+    padding: 2px;
+    margin-top: 50px;
+    border: 3px solid #D4AF37;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
+    border-radius: 15px;
+    background-color: rgb(51, 51, 51);
+    color: rgba(255, 255, 255, 0.877);
+    font-weight: bold;
+}
+
+.texto-cima {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    padding: 2px;
+}
+
+.descricao {
+    margin-top: 15px;
+}
+
+.preco {
+    color: #f5bd05;
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.fidelidade {
+    margin-top: 10px;
+    font-size: 12px;
+    color: rgb(218, 208, 208);
+}
+
+.contrato {
+    border: 3px solid #D4AF37;
+    background-color: #000000;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
+    border-radius: 15px;
+    margin: 10px;
+    text-align: center;
+    font-weight: bold;
+    text-align: center;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+ul {
+    margin-left: 50px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.nao {
+    margin-top: 5px;
+    text-decoration: line-through;
+}
+
+.sim {
+    margin-top: 5px;
+}
+
+.margi-lista-sim {
+    margin-top: 15px;
+}
+
+.black {
+    margin: 15px;
+    padding: 2px;
+    margin-top: 50px;
+    border: 3px solid #D4AF37;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
+    border-radius: 15px;
+    background-color: black;
+    color: aliceblue;
+    font-weight: bold;
+}
+
+.texto-cima-black {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    padding: 2px;
+}
+
+.descricao-black {
+    margin-top: 15px;
+    margin-left: 15PX;
+}
+
+.preco-black {
+    color: #f5bd05;
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+.fidelidade-black {
+    margin-top: 10px;
+    margin-left: 15PX;
+    font-size: 12px;
+    color: rgb(218, 208, 208);
+}
+
+.contrato-black {
+    border: 3px solid #D4AF37;
+    background-color: #000000;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
+    border-radius: 15px;
+    margin: 10px;
+    text-align: center;
+    font-weight: bold;
+    text-align: center;
+    padding: 0.5rem;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.contrato-black:hover {
+    background-color: #D4AF37;
+    border: 2px solid #000000;
+    box-shadow: 0 0 15px white;
+}
+
+.beneficio-b {
+    margin-top:  5px;
+}
+
+.gold {
+    margin: 15px;
+    padding: 2px;
+    margin-top: 50px;
+    border: 3px solid black;
+    box-shadow: 0 0 15px rgba(68, 68, 66, 0.6);
+    border-radius: 15px;
+    background-color: #D4AF37;
+    color: aliceblue;
+    font-weight: bold;
+}
+
+.texto-cima-gold {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    padding: 2px;
+}
+
+.descricao-gold {
+    margin-top: 15px;
+    margin-left: 15PX;
+}
+
+.preco-gold {
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+.fidelidade-gold {
+    margin-top: 10px;
+    margin-left: 15PX;
+    font-size: 12px;
+    color: rgb(218, 208, 208);
+}
+
+.contrato-gold {
+    border: 3px solid #ffffff;
+    background-color: #000000;
+    box-shadow: 15px 0 15px rgba(78, 78, 77, 0.6);
+    border-radius: 15px;
+    margin: 10px;
+    text-align: center;
+    font-weight: bold;
+    text-align: center;
+    padding: 0.5rem;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.contrato-gold:hover {
+    background-color: #ffffff;
+    color: #D4AF37;
+    border: 2px solid #000000;
+    box-shadow: 0 0 15px white;
+}
