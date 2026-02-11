@@ -92,6 +92,32 @@ body a {
     color: black;
 }
 
+.menu a{
+    position:relative;
+    text-decoration:none;
+    font-size:17px;
+    transition:0.3s;
+}
+
+.menu a::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-6px;
+    width:0%;
+    height:2px;
+    background:#D4AF37;
+    transition:0.3s;
+}
+
+.menu a:hover{
+    color:#D4AF37;
+}
+
+.menu a:hover::after{
+    width:100%;
+}
+
 .destaque {
     color: #d4af37;
     font-weight: bold;
@@ -165,7 +191,6 @@ label p {
     border: none;
     outline: none;
     display: inline-block;
-    color: black;
 }
 
 input[type="checkbox"] {
@@ -191,6 +216,7 @@ input[type="checkbox"] {
     padding: 6px 14px;
     border-radius: 6px;
     text-decoration: none;
+    margin-left: 15px;
 }
 
 .paragrafo-footer {

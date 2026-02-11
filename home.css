@@ -15,15 +15,17 @@ body {
     background-attachment: fixed;
     /*fundo parado*/
     font-family: Arial, Helvetica, sans-serif;
+    padding-top: 100px;
 }
 
 .topo {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 40px;
-    background-color: black;
-    height: 100px;
+    padding: 0 60px;
+    background: rgba(0, 0, 0, 0.95);
+    backdrop-filter: blur(8px);
+    height: 90px;
     position: fixed;
     top: 0;
     width: 100%;
@@ -31,22 +33,19 @@ body {
     border-bottom: 1px solid rgba(212, 175, 55, 0.3);
 }
 
-.topo div:first-child {
-    justify-self: start;
-}
-
 .logo {
     height: 110px;
+    transition: 0.3s;
+}
+
+.logo:hover {
+    transform: scale(1.05);
 }
 
 .menu {
-    justify-content: center;
     flex: 1;
     display: flex;
-}
-
-.topo div:first-child {
-    flex: 1;
+    justify-content: center;
 }
 
 .suspensa {
@@ -85,51 +84,59 @@ body {
 
 .opcao {
     display: flex;
-    gap: 40px;
+    gap: 45px;
     list-style: none;
     align-items: center;
 }
 
-
-a {
+.menu a {
     text-decoration: none;
-    color: aliceblue;
+    color: white;
+    font-size: 17px;
     font-weight: 500;
-    font-size: 16px;
+    position: relative;
+    transition: 0.3s;
 }
 
-.destaque {
-    color: #d4af37;
-    font-weight: bold;
+.menu a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0%;
+    height: 2px;
+    background: #D4AF37;
+    transition: 0.3s;
 }
 
 .menu a:hover {
     color: #D4AF37;
 }
 
-.topo-direita {
-    display: flex;
-    justify-content: flex-end;
-    flex: 1;
+.menu a:hover::after {
+    width: 100%;
+}
+
+.destaque-matri {
+    color: #D4AF37;
+    font-weight: bold;
 }
 
 .login {
-    padding: 8px 15px;
-    text-decoration: none;
-    display: inline-block;
-    background: linear-gradient(45deg, #D4AF37);
+    padding: 10px 22px;
+    background: linear-gradient(45deg, #D4AF37, #f1d06b);
     color: black;
-    border-radius: 25px;
+    border-radius: 30px;
     font-weight: bold;
-    font-size: 22px;
-    margin-bottom: 10px;
-    box-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
-    position: relative;
-    overflow: hidden;
+    font-size: 16px;
+    text-decoration: none;
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.6);
+    transition: 0.3s;
 }
 
 .login:hover {
-    background-color: #D4AF37;
+    transform: scale(1.08);
+    box-shadow: 0 0 25px gold;
 }
 
 .container {
@@ -139,25 +146,90 @@ a {
 }
 
 main {
-    padding: 5rem;
+    min-height: calc(100vh - 100px);
     display: flex;
     justify-content: center;
     align-items: center;
-    flex: 1;
+    flex-direction: column;
+    text-align: center;
 }
 
 .texto-inicial {
-    margin-top: 15px;
+    color: #D4AF37;
+    text-shadow: 0 0 20px rgba(255, 215, 0, 0.8);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.texto-inicial h2 {
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+.texto-inicial p {
+    font-size: 22px;
+    color: aliceblue;
+    text-shadow: 0 0 15px #D4AF37;
+}
+
+.box-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.img-principal img {
+    width: 350px;
+    border-radius: 20px;
+    box-shadow: 0 0 40px rgba(255, 215, 0, 0.4);
+    transition: 0.4s;
+}
+
+.img-principal img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 60px gold;
+}
+
+.frase-forte {
+    text-align: center;
     color: #D4AF37;
     text-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
-    text-align: center;
-    font-size: 28px;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.botao-inicial {
+    margin-top: 25px;
+}
+
+.botao-inicial a {
+    display: inline-block;
+    padding: 15px 35px;
+    background: linear-gradient(45deg, #FFD700, #D4AF37);
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 40px;
+    text-decoration: none;
+    box-shadow: 0 0 25px rgba(255, 215, 0, 0.7);
+    transition: 0.3s;
+}
+
+.botao-inicial a:hover {
+    box-shadow: 0 0 40px gold;
 }
 
 .card {
     display: flex;
-    padding: 2rem;
-    border-radius: 8px;
+    justify-content: center;
+    align-items: stretch;
+    gap: 40px;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
 .comum {
@@ -210,6 +282,12 @@ main {
     cursor: pointer;
 }
 
+.contrato:hover {
+    background-color: #000000;
+    border: #D4AF37;
+    box-shadow: 0 0 15px aliceblue;
+}
+
 ul {
     margin-left: 50px;
     margin-top: 15px;
@@ -236,8 +314,8 @@ ul {
     border: 3px solid #D4AF37;
     box-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
     border-radius: 15px;
-    background-color: black;
-    color: aliceblue;
+    background-color: rgb(0, 0, 0);
+    color: rgba(255, 255, 255, 0.877);
     font-weight: bold;
 }
 
@@ -290,7 +368,7 @@ ul {
 }
 
 .beneficio-b {
-    margin-top:  5px;
+    margin-top: 5px;
 }
 
 .gold {
@@ -298,7 +376,7 @@ ul {
     padding: 2px;
     margin-top: 50px;
     border: 3px solid black;
-    box-shadow: 0 0 15px rgba(68, 68, 66, 0.6);
+    box-shadow: 0 0 15px gold;
     border-radius: 15px;
     background-color: #D4AF37;
     color: aliceblue;
@@ -348,8 +426,164 @@ ul {
 }
 
 .contrato-gold:hover {
-    background-color: #ffffff;
-    color: #D4AF37;
-    border: 2px solid #000000;
+    background-color: #D4AF37;
+    border: 2px solid black;
     box-shadow: 0 0 15px white;
+}
+
+.contrato:hover,
+.contrato-black:hover,
+.contrato-gold:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+.contrato a,
+.contrato-black a,
+.contrato-gold a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-decoration: none;
+}
+
+.comum,
+.black,
+.gold {
+    width: 300px;
+    min-height: 650px;
+}
+
+.motivo {
+    text-align: center;
+    color: #D4AF37;
+    text-shadow: 0 0 15px rgba(255, 215, 0, 0.8);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+.motivo p {
+    color: #000000;
+}
+
+.caixas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    gap: 40px;
+    align-items: stretch;
+
+}
+
+.primeira-caixa {
+    padding: 2rem;
+    border-radius: 15px;
+    color: aliceblue;
+    background-color: #000000;
+    box-shadow: 15px 15px 15px rgba(212, 175, 55, 0.6);
+}
+
+.segunda-caixa {
+    padding: 2rem;
+    border-radius: 15px;
+    color: aliceblue;
+    background-color: #000000;
+    box-shadow: 15px 15px 15px rgba(212, 175, 55, 0.6);
+}
+
+.terceira-caixa {
+    padding: 2rem;
+    border-radius: 15px;
+    color: aliceblue;
+    background-color: #000000;
+    box-shadow: 15px 15px 15px rgba(212, 175, 55, 0.6);
+}
+
+.img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.img-box img {
+    width: 350px;
+    border-radius: 20px;
+    box-shadow: 0 0 40px rgba(255, 215, 0, 0.4);
+    transition: 0.4s;
+}
+
+.texto-box-um, 
+.texto-box-dois,
+.texto-box-tres {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.titulo-um, 
+.titulo-dois,
+.titulo-tres {
+    color: #D4AF37;
+    text-shadow: 0px 0px 15px rgba(212, 175, 55, 0.6);
+    font-weight: bold;
+}
+
+.mais {
+    border: 4px solid #D4AF37;
+    border-radius: 15px;
+    background-color: #000000;
+    text-align: center;
+    justify-content: center;
+    display: inline-block;
+    align-items: center;
+    margin-top: 60px;
+    padding: 16px 24px;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
+}
+
+.mais a {
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: bold;
+}
+
+.mais:hover {
+    background-color: #D4AF37;
+    border: 4px solid #000000;
+    box-shadow: 0 0 15px white;
+}
+
+.barra {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: transparent;
+    margin-top: 100px;
+    margin-bottom: 15px;
+}
+
+.voltar {
+    position: absolute;
+    left: 15px;
+    background-color: #D4AF37;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
+    color: black;
+    font-weight: bold;
+    padding: 6px 14px;
+    border-radius: 6px;
+    text-decoration: none;
+    margin-bottom: 15px;
+}
+
+.paragrafo-footer {
+    font-size: 18px;
+    color: aliceblue;
+    font-weight: bold;
+    margin-bottom: 15px;
 }
