@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: url("./Imagens/planodefundo.jpg");
+    background-image: url(../Imagens/planodefundo.jpg);
     background-size: cover;
     /*Cobre a tela toda*/
     background-position: center;
@@ -48,40 +48,6 @@ body {
     justify-content: center;
 }
 
-.suspensa {
-    position: relative;
-}
-
-.submenu {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background: black;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    width: 180px;
-    border-radius: 8px;
-    overflow: hidden;
-    display: none;
-    z-index: 999;
-}
-
-.suspensa:hover .submenu {
-    display: block;
-}
-
-.submenu li a {
-    display: block;
-    padding: 12px;
-    color: white;
-}
-
-.submenu li a:hover {
-    background: #D4AF37;
-    color: black;
-}
-
 .opcao {
     display: flex;
     gap: 45px;
@@ -117,7 +83,7 @@ body {
     width: 100%;
 }
 
-.destaque-matri {
+.destaque {
     color: #D4AF37;
     font-weight: bold;
 }

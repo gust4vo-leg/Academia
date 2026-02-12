@@ -1,0 +1,226 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../imagens/planodefundo.jpg);
+    background-size: cover;
+    /*Cobre a tela toda*/
+    background-position: center;
+    /*centraliza*/
+    background-repeat: no-repeat;
+    /*Não Repete*/
+    background-attachment: fixed;
+    /*fundo parado*/
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 100px;
+}
+
+.topo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 60px;
+    background: rgba(0, 0, 0, 0.95);
+    backdrop-filter: blur(8px);
+    height: 90px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+}
+
+.logo {
+    height: 110px;
+    transition: 0.3s;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
+.menu {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.opcao {
+    display: flex;
+    gap: 45px;
+    list-style: none;
+    align-items: center;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+    position: relative;
+    transition: 0.3s;
+}
+
+.menu a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0%;
+    height: 2px;
+    background: #D4AF37;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #D4AF37;
+}
+
+.menu a:hover::after {
+    width: 100%;
+}
+
+.destaque-matri {
+    color: #D4AF37;
+    font-weight: bold;
+}
+
+.login {
+    padding: 10px 22px;
+    background: linear-gradient(45deg, #D4AF37, #f1d06b);
+    color: black;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    box-shadow: 0 0 15px rgba(212, 175, 55, 0.6);
+    transition: 0.3s;
+}
+
+.login:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 25px gold;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 40px;
+}
+
+.titulo {
+    color: #D4AF37;
+    text-shadow: 0 0 15px rgba(212, 175, 55, 0.6);
+    text-align: center;
+    font-size: 2em;
+}
+
+h1 {
+    color: #D4AF37;
+    margin-bottom: 10px;
+    font-size: 2.8em;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(255, 196, 0, 0.6);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: left;
+}
+
+.card {
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0 5px 15px rgba(255, 196, 0, 0.6);
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    padding: 14px;
+}
+
+.card2 {
+    text-align: center;
+    background: rgb(255, 255, 255);
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    padding: 14px;
+    justify-items: center;
+    font-size: 1rem;
+    width: 30%;
+    margin: auto;
+    margin-top: 30px;
+    box-shadow: 0 5px 15px rgba(255, 196, 0, 0.6);
+}
+
+.card pre {
+    border-radius: 8px;
+    padding: 12px;
+    color: #000000;
+    background-color: aliceblue;
+    font-size: 1rem;
+    margin: 0;
+    border-bottom: 3px solid #4f0808;
+}
+
+.card2 pre {
+    color: #000000;
+    margin-bottom: 10px;
+    font-size: 20px;
+    border-bottom: 1px solid #000000;
+    font-family: 'arial', sans-serif;
+}
+
+.button {
+    display: inline-block;
+    background: linear-gradient(135deg, #D4AF37 0%, #f1d06b 100%);
+    color: white;
+    padding: 14px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    margin: 8px 5px;
+    transition: all 0.5s ease;
+    border: none;
+    cursor: pointer;
+    font-size: 1.05em;
+    width: 50%;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 5px 15px rgba(212, 175, 55, 0.6);
+}
+
+.barra {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: transparent;
+    margin-top: 100px;
+    margin-bottom: 15px;
+}
+
+.voltar {
+    position: absolute;
+    left: 15px;
+    background-color: #D4AF37;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
+    color: white;
+    padding: 6px 14px;
+    border-radius: 6px;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.paragrafo-footer {
+    font-size: 18px;
+    color: aliceblue;
+    font-weight: bold;
+}

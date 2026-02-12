@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: url("./Imagens/planodefundo.jpg");
+    background-image: url(../imagens/planodefundo.jpg);
     background-size: cover;
     /*Cobre a tela toda*/
     background-position: center;
@@ -48,40 +48,6 @@ body {
 
 .topo div:first-child {
     flex: 1;
-}
-
-.suspensa {
-    position: relative;
-}
-
-.submenu {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background: black;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    width: 180px;
-    border-radius: 8px;
-    overflow: hidden;
-    display: none;
-    z-index: 999;
-}
-
-.suspensa:hover .submenu {
-    display: block;
-}
-
-.submenu li a {
-    display: block;
-    padding: 12px;
-    color: white;
-}
-
-.submenu li a:hover {
-    background: #D4AF37;
-    color: black;
 }
 
 .opcao {
@@ -156,7 +122,10 @@ a {
 .hero {
     height: calc(100vh - 100px);
     margin-top: 100px;
-    background: url(./Imagens/treino.jpg) center/cover no-repeat;
+    background-image: url(../imagens/treino.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     position: relative;
     border-bottom: 1px solid rgba(212, 175, 55, 0.3);
 }
