@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: url(../imagens/planodefundo.jpg);
+    background-image: url(../Imagens/planodefundo.jpg);
     background-size: cover;
     /*Cobre a tela toda*/
     background-position: center;
@@ -122,8 +122,7 @@ a {
 .hero {
     height: calc(100vh - 100px);
     margin-top: 100px;
-    background-image: url(../imagens/treino.jpg);
-    background-size: cover;
+    background: url(../Imagens/treino.jpg);
     background-position: center;
     background-repeat: no-repeat;
     position: relative;

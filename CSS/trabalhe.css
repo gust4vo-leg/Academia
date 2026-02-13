@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../Imagens/planodefundo.jpg);
+    font-family: "Cabin", sans-serif;
+    font-weight: 400;
+}
+
+body a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.topo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    padding-bottom: -10px;
+}
+
+.logo {
+    margin-left: 50px;
+    width: 120px;
+}
+
+.menu {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    text-decoration: none;
+    margin-right: 150px;
+    font-weight: bold;
+}
+
+.menu a {
+    position: relative;
+    text-decoration: none;
+    font-size: 17px;
+    transition: 0.3s;
+}
+
+.menu a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0%;
+    height: 2px;
+    background: #D4AF37;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #D4AF37;
+}
+
+.menu a:hover::after {
+    width: 100%;
+}
+
+.opcao {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    align-items: center;
+}
+
+.a {
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+main {
+    padding: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.card {
+    display: inline-block;
+    padding: 2rem;
+    border: 3px solid #D4AF37;
+    border-radius: 8px;
+    color: aliceblue;
+    background-color: black;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
+}
+
+.texto-central {
+    font-size: 90px;
+    color: #D4AF37;
+    text-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: "Bebas Neue",  sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.campo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.campo label {
+    width: 180px;
+    color: white;
+    font-weight: bold;
+    display: flex;
+}
+
+
+.campo input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.ddd {
+    width: 78px;
+}
+
+label p {
+    margin-left: 4px;
+    color: #D4AF37;
+}
+
+.letra {
+    width: 180px;
+    color: white;
+    font-weight: bold;
+}
+
+span {
+    color: #D4AF37;
+}
+
+input[type="file"] {
+    opacity: 0;
+    width: 0.1px;
+    height: 0.1px;
+    position: absolute;
+}
+
+.custom-file-upload {
+    margin-top: 15px;
+    width: 100%;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00000093;
+    color: gold;
+    border: 1px solid #D4AF37;
+    text-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
+    border-radius: 6px;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+}
+
+.apertar {
+    display: flex;
+    justify-content: space-around;
+}
+
+.button {
+    display: flex;
+    padding: 10px;
+    background-color: #D4AF37;
+    width: 45%;
+    border: none;
+    border-radius: 12px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0 0 15px rgba(255, 217, 0, 0.644);
+}
+
+.button:hover {
+    box-shadow: 0 0 50px rgba(255, 215, 0, 0.6);
+    background-color: gold;
+}
+
+.vagas-texto {
+    font-weight: bold;
+    font-size: 18px;
+    color: aliceblue;
+    display: flex;
+    margin-right: 5px;
+}
+
+.vagas {
+    margin-bottom: 15px;
+    margin-top: 10px;
+    background-color: #00000093;
+    color: gold;
+    padding:  10px 20px;
+    border-radius: 5px;
+    border: 1px solid #D4AF37;
+    width: 100%;
+    box-shadow: 0 0 15px #D4AF37;
+    font-size: 16px;
+    height: 40px;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+}
+
+.escolhas {
+    color: aliceblue;
+}

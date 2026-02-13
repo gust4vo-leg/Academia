@@ -128,6 +128,7 @@ a {
     max-width: 1200px;
     margin: 0 auto;
     padding: 60px 40px;
+    margin-top: 200px;
 }
 
 .titulo {
@@ -140,9 +141,9 @@ a {
 h1 {
     color: #D4AF37;
     margin-bottom: 10px;
-    font-size: 2.8em;
+    font-size: 2.5em;
     font-weight: 700;
-    text-shadow: 2px 2px 4px rgba(255, 196, 0, 0.6);
+    text-shadow: 0 0 15px rgba(255, 196, 0, 0.6);
     letter-spacing: 1px;
     text-transform: uppercase;
 }
@@ -167,7 +168,7 @@ h1 {
 
 .card2 {
     text-align: center;
-    background: rgb(255, 255, 255);
+    background: rgb(0, 0, 0);
     border: 3px solid rgb(0, 0, 0);
     border-radius: 20px;
     padding: 14px;
@@ -186,15 +187,20 @@ h1 {
     background-color: aliceblue;
     font-size: 1rem;
     margin: 0;
-    border-bottom: 3px solid #4f0808;
+    border-bottom: 3px solid #D4AF37;
 }
 
 .card2 pre {
-    color: #000000;
+    color: #ffffff;
     margin-bottom: 10px;
     font-size: 20px;
-    border-bottom: 1px solid #000000;
+    border-bottom: 1px solid #d4af37;
     font-family: 'arial', sans-serif;
+}
+
+.card2 h2 {
+    color: #D4AF37;
+    text-shadow: 0px 5px 15px rgba(212, 175, 55, 0.6);
 }
 
 .button {
@@ -214,6 +220,11 @@ h1 {
     text-transform: uppercase;
     letter-spacing: 1px;
     box-shadow: 0 5px 15px rgba(212, 175, 55, 0.6);
+}
+
+.button:hover {
+    box-shadow: 0 5px 15px rgba(212, 175, 55, 0.6);
+    background-color: gold;
 }
 
 .barra {
