@@ -46,10 +46,6 @@ body {
     display: flex;
 }
 
-.topo div:first-child {
-    flex: 1;
-}
-
 .opcao {
     display: flex;
     gap: 40px;
@@ -91,15 +87,10 @@ a {
     width:100%;
 }
 
-.destaque {
-    color: #d4af37;
-    font-weight: bold;
-}
-
 .topo-direita {
     display: flex;
     justify-content: flex-end;
-    flex: 1;
+    
 }
 
 .login {
@@ -141,7 +132,7 @@ a {
 
 .hero-texto h1 {
     font-size: 56px;
-    color: #D4AF37;
+    color: gold;
     letter-spacing: 2px;
     margin-bottom: 10px;
 }
@@ -182,7 +173,7 @@ a {
 
 .sobre h3 {
     display: inline-block;
-    background: linear-gradient(45deg, #D4AF37);
+    background-color: gold;
     color: black;
     border-radius: 25px;
     font-weight: bold;
@@ -246,6 +237,11 @@ a {
     box-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
 }
 
+.botao-matri:hover {
+    background-color: gold;
+    box-shadow: 0 0 45px rgba(255, 215, 0, 0.6) ;
+}
+
 .botao-matri a {
     color: black;
     font-size: 400;
@@ -253,7 +249,7 @@ a {
 }
 .somos h3 {
     display: inline-block;
-    background: linear-gradient(45deg, #D4AF37);
+    background-color: gold;
     color: black;
     border-radius: 25px;
     font-weight: bold;
@@ -274,7 +270,7 @@ a {
 
 .fazemos h3 {
     display: inline-block;
-    background: linear-gradient(45deg, #D4AF37);
+    background-color: gold;
     color: black;
     border-radius: 25px;
     font-weight: bold;

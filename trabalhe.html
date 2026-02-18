@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/trabalhe.css">
-    <title>Trabalhe Conosco</title>
+    <link rel="icon" href="./Imagens/academia.png">
+    <title>Trabalhe Conosco - Iron Force</title>
 </head>
 
 <body>
@@ -16,13 +17,10 @@
         <nav class="menu">
             <ul class="opcao">
                 <li><a href="home.html">Home</a></li>
-
                 <li><a href="sobre.html">Sobre</a></li>
-
                 <li><a href="mensal.html">Planos</a></li>
-
                 <li><a href="contato.html">Contato</a></li>
-
+                <li><a href="trabalhe.html">Trabalhe Conosco</a></li>
                 <li><a href="matricule.html" class="destaque">Matricule-se</a></li>
             </ul>
         </nav>
@@ -34,55 +32,56 @@
                 TRABALHE CONOSCO
             </div>
             <form method="post" enctype="multipart/form-data">
-            <section class="card">
-                <section class="campo">
-                    <label>Nome <p>*</p></label>
-                    <input type="text" placeholder="Nome completo">
-                </section>
+                <section class="card">
+                    <section class="campo">
+                        <label>Nome <p>*</p></label>
+                        <input type="text" placeholder="Nome completo">
+                    </section>
 
-                <section class="campo">
-                    <label>Email <p>*</p></label>
-                    <input type="email" placeholder="Email">
-                </section>
+                    <section class="campo">
+                        <label>Email <p>*</p></label>
+                        <input type="email" placeholder="Email">
+                    </section>
 
-                <section class="campo">
-                    <label>Telefone <p>*</p></label>
-                    <span class="fone"><input type="number" placeholder="(DDD)" class="ddd">-<input type="number"
-                            placeholder="Telefone"></span>
-                </section>
+                    <section class="campo">
+                        <label>Telefone <p>*</p></label>
+                        <span class="fone"><input type="number" placeholder="(DDD)" class="ddd"> - <input type="number"
+                                placeholder="Telefone" class="fone"></span>
+                    </section>
 
-                <section class="campo">
-                    <label>CPF <p>*</p></label>
-                    <input type="number" placeholder="CPF">
-                </section>
+                    <section class="campo">
+                        <label>CPF <p>*</p></label>
+                        <input type="number" placeholder="CPF">
+                    </section>
 
-                <section>
-                    <span><label for="file" class="letra">Carregar Currículo</label> *</span>
-                    <br>
-                    <label for="file-upload" class="custom-file-upload">Selecionar Arquivo</label>
-                    <input type="file" id="file-upload" name="file">
-                    <br><br>
-
-                    <label class="vagas-texto">Selecione a vaga que deseja se candidatar<p>*</p></label>
-
-                    <select class="vagas">
-                        <div class="escolhas">
-                            <option>Favor Selecionar</option>
-                            <option>Personal</option>
-                            <option>Recepcionista</option>
-                            <option>Estágio</option>
-                            <option>Gerente</option>
-                            <option>Marketing</option>
-                            <option>Departamento de compras</option>
-                            <option>Coordenador</option>
+                    <section>
+                        <div class="campo coluna">
+                            <label>Carregar Currículo <span>*</span></label>
+                            <input type="file" name="file" class="arquivo">
                         </div>
-                    </select>
-                    <div class="apertar">
-                        <button type="submit" onclick="alert('Currículo enviado com sucesso!!')" class="button">Enviar</button>
-                        <button type="reset"  onclick="alert('Formulário limpo com sucesso!!')" class="button">Limpar</button>
-                    </div>
-                    </form>
-                </section>
+                        <br><br>
+
+                        <label class="vagas-texto">Selecione a vaga que deseja se candidatar<p>*</p></label>
+
+                        <select class="vagas">
+                            <div class="escolhas">
+                                <option>Favor Selecionar</option>
+                                <option>Personal</option>
+                                <option>Recepcionista</option>
+                                <option>Faxineiro</option>
+                                <option>Marketing</option>
+                                <option>Departamento de compras</option>
+                                <option>Coordenador</option>
+                            </div>
+                        </select>
+                        <div class="apertar">
+                            <button type="submit" onclick="alert('Currículo enviado com sucesso!!')"
+                                class="button">Enviar</button>
+                            <button type="reset" onclick="alert('Formulário limpo com sucesso!!')"
+                                class="button">Limpar</button>
+                        </div>
+            </form>
+            </section>
             </section>
         </div>
     </main>

@@ -46,10 +46,6 @@ body {
     display: flex;
 }
 
-.topo div:first-child {
-    flex: 1;
-}
-
 .opcao {
     display: flex;
     gap: 40px;
@@ -91,15 +87,10 @@ a {
     width:100%;
 }
 
-.destaque {
-    color: #d4af37;
-    font-weight: bold;
-}
-
 .topo-direita {
     display: flex;
     justify-content: flex-end;
-    flex: 1;
+    
 }
 
 .login {
@@ -136,7 +127,7 @@ main {
 }
 
 .texto-inicial {
-    color: #D4AF37;
+    color: gold;
     text-shadow: 0 0 20px rgba(255, 215, 0, 0.8);
     text-align: center;
     margin-bottom: 50px;
@@ -176,7 +167,7 @@ main {
 
 .frase-forte {
     text-align: center;
-    color: #D4AF37;
+    color: gold;
     text-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
     font-size: 30px;
     font-weight: bold;
@@ -202,6 +193,7 @@ main {
 
 .botao-inicial a:hover {
     box-shadow: 0 0 40px gold;
+    background-color: gold;
 }
 
 .card {
@@ -269,15 +261,26 @@ main {
     box-shadow: 0 0 15px aliceblue;
 }
 
-ul {
-    margin-left: 50px;
+.check {
+    
     margin-top: 15px;
     margin-bottom: 15px;
+    text-align: left;
+}
+
+.check li {
+    list-style: none;
+    padding: 5px;
+    font-size: 15px;
+    cursor: default;
+}
+
+.check i {
+    padding: 5px;
 }
 
 .nao {
     margin-top: 5px;
-    text-decoration: line-through;
 }
 
 .sim {
@@ -438,7 +441,7 @@ ul {
 
 .motivo {
     text-align: center;
-    color: #D4AF37;
+    color: gold;
     text-shadow: 0 0 15px rgba(255, 215, 0, 0.8);
     margin-top: 20px;
     margin-bottom: 20px;

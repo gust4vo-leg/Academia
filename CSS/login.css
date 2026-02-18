@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 * {
     margin: 0;
@@ -84,11 +85,6 @@ body a {
     width:100%;
 }
 
-.destaque {
-    color: #d4af37;
-    font-weight: bold;
-}
-
 main {
     padding: 5rem;
     display: flex;
@@ -104,12 +100,19 @@ main {
     border-radius: 8px;
     color: aliceblue;
     background-color: black;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
+    margin-left: 125px;
 }
 
-.card h2 {
-    font-size: 28px;
+.texto-central {
+    font-size: 90px;
+    color: gold;
+    text-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
     margin-bottom: 20px;
     text-align: center;
+    font-family: "Bebas Neue",  sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .campo,
@@ -159,6 +162,11 @@ label p {
     display: inline-block;
 }
 
+.botao:hover {
+    background-color: rgb(238, 204, 13);
+    box-shadow: 0 0 25px rgba(255, 215, 0, 0.6);
+}
+
 input[type="checkbox"] {
     display: inline;
     margin-top: 10px;
@@ -170,7 +178,7 @@ input[type="checkbox"] {
     justify-content: center;
     position: relative;
     background-color: transparent;
-    margin-top: 100px;
+    margin-top: 180px;
 }
 
 .voltar {

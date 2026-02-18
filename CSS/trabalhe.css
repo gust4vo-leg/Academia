@@ -101,7 +101,7 @@ main {
 
 .texto-central {
     font-size: 90px;
-    color: #D4AF37;
+    color: gold;
     text-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
     margin-bottom: 20px;
     text-align: center;
@@ -131,7 +131,12 @@ main {
 }
 
 .ddd {
+    margin-left: 8px;
     width: 78px;
+}
+
+.fone {
+    width: 70%;
 }
 
 label p {
@@ -149,26 +154,25 @@ span {
     color: #D4AF37;
 }
 
-input[type="file"] {
-    opacity: 0;
-    width: 0.1px;
-    height: 0.1px;
-    position: absolute;
+.arquivo{
+width:100%;
+padding:14px;
+border-radius:8px;
+border:2px solid #D4AF37;
+background:black;
+color:#D4AF37;
+font-weight:bold;
+cursor:pointer;
 }
 
-.custom-file-upload {
-    margin-top: 15px;
-    width: 100%;
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #00000093;
-    color: gold;
-    border: 1px solid #D4AF37;
-    text-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
-    border-radius: 6px;
-    box-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
-    cursor: pointer;
-    font-family: Arial, sans-serif;
+.arquivo::file-selector-button{
+background:#D4AF37;
+border:none;
+padding:8px 15px;
+border-radius:6px;
+margin-right:10px;
+font-weight:bold;
+cursor:pointer;
 }
 
 .apertar {

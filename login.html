@@ -3,8 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Sessão de login</title>
+    <title>Sessão de login - Iron Force</title>
     <link rel="stylesheet" href="./CSS/login.css">
+    <link rel="icon" href="./Imagens/academia.png">
 </head>
 
 <body>
@@ -16,9 +17,7 @@
             <ul class="opcao">
                 <li><a href="home.html">Home</a></li>
                 <li><a href="sobre.html">Sobre</a></li>
-
                 <li><a href="mensal.html">Planos</a></li>
-
                 <li><a href="contato.html">Contato</a></li>
                 <li><a href="trabalhe.html">Trabalhe Conosco</a></li>
                 <li><a href="matricule.html" class="destaque">Matricule-se</a></li>
@@ -28,43 +27,49 @@
     </header>
 
     <main>
-        <section class="card">
-            <h2>Preeencha o Formulário</h2>
-
-            <div class="campo">
-                <label>Nome<p>*</p></label>
-                <input type="text" placeholder="Nome completo">
+        <div class="container">
+            <div class="texto-central">
+                PREENCHA O FORMULÁRIO
             </div>
 
-            <div class="nascimento">
-                <label>Data de Nascimento<p>*</p> </label>
-                <input type="texto" placeholder="Data de Nascimento" onfocus="(this.type='date')" onblur="if(this.value==''){this.type='text'}">
-            </div>
+            <section class="card">
 
-            <div class="campo">
-                <label>Email<p>*</p></label>
-                <input type="email" placeholder="Email">
-            </div>
-            <div class="campo">
-                <label>Telefone<p>*</p></label>
-                <input type="number" placeholder="Telefone">
+                <div class="campo">
+                    <label>Nome<p>*</p></label>
+                    <input type="text" placeholder="Nome completo">
+                </div>
 
-            </div>
-            <div class="campo">
-                <label>Senha<p>*</p></label>
-                <input type="password" placeholder="Senha">
-            </div>
-            <div class="campo">
-                <label>Confirmar Senha<p>*</p></label>
-                <input type="password" placeholder="Confirmar senha">
-            </div>
+                <div class="nascimento">
+                    <label>Data de Nascimento<p>*</p> </label>
+                    <input type="texto" placeholder="Data de Nascimento" onfocus="(this.type='date')"
+                        onblur="if(this.value==''){this.type='text'}">
+                </div>
 
-            <a href="sobre.html" class="botao">Cadastrar</a>
+                <div class="campo">
+                    <label>Email<p>*</p></label>
+                    <input type="email" placeholder="Email">
+                </div>
+                <div class="campo">
+                    <label>Telefone<p>*</p></label>
+                    <input type="number" placeholder="Telefone">
 
-            <label>
-                <input type="checkbox"> Aceito os termos de uso
-            </label>
-        </section>
+                </div>
+                <div class="campo">
+                    <label>Senha<p>*</p></label>
+                    <input type="password" placeholder="Senha">
+                </div>
+                <div class="campo">
+                    <label>Confirmar Senha<p>*</p></label>
+                    <input type="password" placeholder="Confirmar senha">
+                </div>
+
+                <a href="sobre.html" class="botao">Cadastrar</a>
+
+                <label>
+                    <input type="checkbox"> Aceito os termos de uso
+                </label>
+            </section>
+        </div>
     </main>
 
     <footer>

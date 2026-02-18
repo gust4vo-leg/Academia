@@ -1,5 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 * {
     margin: 0;
@@ -98,14 +99,24 @@ main {
     color: aliceblue;
     background-color: black;
     box-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
+    margin-left: 225px;
 }
 
+
 .texto-central {
-    font-size: 20px;
-    color: #D4AF37;
+    font-size: 90px;
+    color: gold;
     text-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
     margin-bottom: 20px;
     text-align: center;
+    font-family: "Bebas Neue",  sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.destaque {
+    color: black;
+    text-shadow: 0 0 15px #D4AF37;
 }
 
 .campo {
@@ -185,9 +196,8 @@ input[type="radio"] {
 }
 
 .final:hover {
-    background-color: black;
-    box-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
-    color: aliceblue;
+    background-color: gold;
+    box-shadow: 0 0 25px #D4AF37;
 }
 
 .finalizar a {
@@ -201,8 +211,7 @@ input[type="radio"] {
     justify-content: center;
     position: relative;
     background-color: transparent;
-    margin-top: 100px;
-    margin-bottom: 15px;
+    margin-top: 180px;
 }
 
 .voltar {
@@ -210,17 +219,15 @@ input[type="radio"] {
     left: 15px;
     background-color: #D4AF37;
     box-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
-    color: black;
-    font-weight: bold;
+    color: white;
     padding: 6px 14px;
     border-radius: 6px;
     text-decoration: none;
-    margin-bottom: 15px;
+    margin-left: 15px;
 }
 
 .paragrafo-footer {
     font-size: 18px;
     color: aliceblue;
     font-weight: bold;
-    margin-bottom: 15px;
 }
